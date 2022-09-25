@@ -1,0 +1,112 @@
+.formContainer{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.formBox{
+    background-color: rgb(41, 41, 41);
+    height: 250px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.layoutSyle{
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+    height: 100%;
+    width: 100%;
+
+}
+.pictureSide{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(59, 59, 59);
+    height: 100%;
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: 10px;
+
+}
+.formPicture{
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.formSide{
+    padding: 25px 30px;
+    padding-bottom: 0;
+
+    height: 100%;
+
+}
+.formSide > h2{
+    color: white;
+    font-size: 23px;
+
+}
+.stars{
+    padding-top: 15px;
+    color: white;
+}
+.opinionBox{
+    padding-top: 20px;
+    height: 110px;
+    width: 100%;
+}
+.opinion-field{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color:white;
+    font-size: 18px;
+    text-align:top;
+    resize: none;
+    outline: none;
+    padding: 15px;
+}
+
+
+.form{
+    height: 100%;
+}
+.form > textarea{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(59, 59, 59);
+}
+.form > ::placeholder{
+    color: rgb(99, 99, 99);
+}
+
+
+.pawButton{
+    width: 50%;
+}
+
+.pawImg{
+    margin-top: 40px;
+    background-image: url("../images/dogButtonUnhover.png");
+    background-position: center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    aspect-ratio: 1/1;
+}
+.pawImg:hover{
+    background-image: url("../images/dogButtonHover.png");
+}

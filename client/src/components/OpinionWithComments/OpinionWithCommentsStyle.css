@@ -1,0 +1,89 @@
+
+*{font-family: 'Helvetica Neue';}
+
+p{color: white;}
+
+.opinionWithComments-container{
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 350px;
+
+    margin-top: 50px;
+}
+.opinionSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #424242;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    padding: 20px 30px;
+    padding-bottom: 30px;
+    gap: 20px;
+}
+.opinionSection > h3{font-size: 23px;}
+
+
+.commentTitle > h3 {
+    background-color: #424242;
+    padding-left: 25px;
+    color:#c5d300;
+}
+
+
+.commentsSection{
+    display: flex;
+    background-color: #424242;
+    padding: 15px 25px;
+    padding-bottom: 20px;
+
+}
+.commentUsername{
+    color: white;
+    font-weight: 700;
+    padding-right: 5px;
+}
+.commentBody{color: white;}
+
+
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #c5d300;
+    color: white;
+    border-radius: 0px 0px 15px 15px;
+}
+
+
+.inputComment{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color:black;
+    font-size: 17px;
+    padding-left: 20px;
+    outline: none;
+}
+.inputComment::placeholder{
+    color: rgb(83, 83, 83);
+    font-size: 15px;
+
+}
+
+.buttonComment{
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: black;
+}
+.deleteIMG{
+    margin-left: 10px;
+}

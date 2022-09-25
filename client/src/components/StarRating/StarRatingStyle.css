@@ -1,0 +1,8 @@
+input[type='radio']{
+    display: none;
+}
+.starComponent{
+    cursor: pointer;
+    transition: 200ms;
+    margin-left: 4px;
+}

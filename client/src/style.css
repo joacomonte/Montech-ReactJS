@@ -1,0 +1,873 @@
+/* NOTES_______________
+
+justify-content: center; Axis X
+align-items: center; Axis Y
+
+*/
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    color:grey;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* BASIC SETUP BETWEEN HEADER AND FOOTER */
+.pageContainer-monte1{
+    position: relative;
+    top: 90px;
+
+    min-height: calc(100vh - 90px);
+    height: auto;
+    width: 100%;
+
+    padding-bottom: 90px;
+
+    /* height of header is 90px */
+}
+
+
+/* no se que es */
+.homePage-container{
+    display: grid;
+    grid-template-rows: 800px auto;
+
+}
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/*---------------HEADER / NAVBAR--------------------------------------------------- */
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+ 
+.header-container{
+    position: fixed;
+    top:0;
+
+    width: 100%;
+    height: 90px;
+
+    background-color: #0C0C0C;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+
+
+
+    z-index: 10;
+    box-shadow: 0 0px 20px #121212, 0px 2px 30px rgb(1, 1, 1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@300&display=swap');
+
+
+.montechLetras-container{
+
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.montechLetras{
+    font-family: 'Lexend Giga', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+
+.headerLinks-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    width: 400px;
+
+}
+
+.buttonStyle-white{
+    height: 50px;
+    width: 90px;
+
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    color: #000;
+    padding: 6px 10px;
+    margin-left: 20px;
+
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttonStyle-white:hover{
+    color: #eaeaea;
+    background-color: #0c0c0c00;
+    letter-spacing: 0.1rem;
+
+}
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/*-----------------------------------MOUNTAIN AND M LOGO------------------------------------- */
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+
+.main-container{
+    background-image: url("./images/fondo_montech_web.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 101%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image{
+    /* sube 350px desde el centro */
+    margin-top: -350px;
+    width: 175px;
+    height: auto;
+
+}
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/*-----------------------------------FORECAST CSS------------------------------------- */
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+
+
+.forecast-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 110px;
+    width: auto;
+    color: white;
+    top: 120px;
+    left: 50px;
+    padding: 0px 20px;
+    background-color: rgba(141, 141, 141, 0.132);
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px 20px rgba(0, 0, 0, 0.376);
+}
+
+.forecast-title{
+    color: white;
+    padding: 5px 0px;
+}
+.forecast-title h4{
+    color: white;
+
+}
+
+.forecast-Searcher{
+    padding: 10px 0px;
+    color: black;
+}
+
+
+
+
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/*-----------------------------------PRODUCTS CARDS SECTION------------------------------------- */
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+
+
+.productsSection-container{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    padding-bottom: 10%;
+}
+
+
+
+
+.productsSection-title{
+    color: white;
+    font-size: 3rem;
+}
+
+
+
+
+
+.productsSection-filterButtons-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.products-filtersButton{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-size: 18px;
+    cursor: pointer;
+    width: 160px;
+    height: 60px;
+    padding: 0px 10px;
+    margin: 20px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    transition: 0.5s;
+}
+.products-filtersButton:hover{
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+}
+
+.products-filtersButtonActive{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    cursor: pointer;
+    width: 160px;
+    height: 60px;
+    padding: 0px 10px;
+    margin: 20px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    transition: 0.5s;
+}
+
+
+/*  ________________________________CARDS__________________________________ */
+
+
+
+.productsSection-cardsContainer{
+    position: relative;
+    
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    align-content: center;
+    padding: 10% 0%;
+}
+
+
+
+/*---------------- CARD ----------------- */
+
+
+
+.card-container{
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: transparent;
+    opacity: 0.2;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.197); */
+    /* margin: 5% 30px; */
+    transition: 0.5s;
+    position: relative;
+    margin: 0px 40px;
+
+
+
+}
+
+.imgBackground{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 200px;
+    margin-top: 25%;
+    /* box-shadow: 0px -10px 50px 0px rgb(73, 73, 73); */
+    transition: 0.5s ease;
+    border-radius: 20px;
+}
+.card-container:hover .imgBackground{
+    -webkit-box-shadow: 0px 10px 30px -10px rgb(255, 255, 255);
+}
+.card-container:hover{
+    transform: scale(1.05);
+}
+
+
+.card-container > img{
+    position: absolute;
+    background-color: transparent;
+    padding: 27% 2% 27% 2%;
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+
+}
+.buttonStyle-card{
+
+
+    font-size: 17px;
+
+    text-decoration: none;
+    padding: 9px 25px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 10px;
+
+    position: absolute;
+    bottom: 3%;
+
+    transition: 0.5s;
+    will-change: filter;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+
+}
+.buttonStyle-card:hover{
+
+    color: black;
+    background-color: white;
+
+    border-color: transparent;
+
+    letter-spacing: 0.1rem;
+}
+
+
+.card-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    position: absolute;
+    opacity: 0;
+}
+
+
+.card-container:hover{
+    opacity: 1;
+}
+
+.card-container:hover .card-content{
+    opacity: 1;
+}
+
+.card-content > h3{
+    color: rgb(255, 255, 255);
+    position: absolute; 
+    top: 0%;
+}
+.card-content > h4{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 8%;
+
+}
+
+
+
+.star{
+    position: absolute;
+    top: 19%;
+    right: 4%;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+/* EN TOUCH QUE MUESTRE DIRECTAMENTE ESTO */
+@media (hover: none){
+    
+    .card-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+        position: absolute;
+        opacity: 1;
+    }
+
+    .card-container{
+        opacity: 1;
+    }
+    
+}
+
+
+/*-----------------------------------IMG ZOOM PORTAL------------------------------------- */
+
+
+.dismiss{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.807);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.dismiss-inside{
+    position: relative;
+
+    height: 50vh;
+    aspect-ratio: 1/1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+
+
+}
+
+.img-dismiss{
+    position: relative;
+    width: auto;
+    height: 40vh;
+}
+
+
+
+
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/*-----------------------------------Mountains Transition------------------------------------- */
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+
+
+.transition-img{
+    background-image: url("./images/transitionFinale.png");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-top: -1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1650px; */
+}
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/*-----------------------------------SECTION 2------------------------------------- */
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+
+.section2-area{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+
+
+
+    padding:5%;
+    /* outline: inset 2px black; */
+}
+
+
+
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/*-----------------------------------FAV LIST------------------------------------- */
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+
+
+
+
+.favList-container{
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: auto;
+
+}
+
+.favList-container h2{
+    display: flex;
+    justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    width: 415px;
+    padding: 20px 20px;
+    background-color: rgb(13, 13, 13);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -10px 10px -5px rgba(53, 53, 53, 0.495);
+}
+
+.favList-container ul{
+    position: relative;
+
+}
+
+.favList-container ul li{
+    margin-top: 2%;
+    list-style: none;
+    padding: 20px;
+    width: 385px;
+    height: 60px;
+    background-color: transparent;
+    color: black;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.099);
+    transition: 0.5s;
+}
+
+.favList-container ul li:hover{
+    transform: scale(1.07);
+    /* z-index: 100; */
+    background-color: black;
+    box-shadow: 0px -10px 10px -5px rgba(32, 32, 32, 0.495);
+    color: #fff;
+}
+
+
+
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/*-----------------------------------WISHLIST------------------------------------- */
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+
+
+
+
+
+
+.wishList-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0 50px;
+    width: 70vw;
+    max-width: 415px;
+
+}
+
+.wishList-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(40, 40, 40);
+    width: 415px;
+
+    height: 70px;
+    padding: 20px 20px;
+    background-color: rgb(0, 246, 251);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -10px 10px -5px rgba(53, 53, 53, 0.495);
+}
+
+.wishList-item{
+    display: flex;
+    align-items: center; /* EJE Y */
+    justify-content: space-between;
+    margin-top: 5px;
+    padding-left: 5%;
+    list-style: none;
+    width: 385px;
+    height: 60px;
+    background-color: transparent;
+    color: black;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.099);
+    transition: 0.5s;
+}
+
+.wishList-item button{
+    color: transparent;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    outline: inherit;
+    background: none;
+    height: 60px;
+    width: 100px;
+    transition: 0.5s;
+}
+.wishList-item button:hover{
+
+    background-color: rgba(0, 192, 239, 0.372);
+}
+
+.wishList-item:hover button{
+    color: black;
+
+}
+
+.wishList-item:hover{
+    transform: scale(1.05);
+    /* z-index: 100; */
+    background-color: rgba(0, 247, 251, 0.372);
+    box-shadow: 0px 5px 10px px rgba(32, 32, 32, 0.345);
+    color: rgb(0, 0, 0);
+}
+
+
+
+.wishList-input{
+    display: flex;
+    align-items: center; /* EJE Y */
+    margin-top: 5px;
+    padding-left: 5%;
+    list-style: none;
+    width: 385px;
+    height: 60px;
+    background-color: transparent;
+    color: black;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.099);
+    transition: 0.5s;
+}
+
+
+.wishList-input input{
+    font-size: 15px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    width: 350px;
+    height: 50px;
+}
+
+.wishList-input:hover{
+    transform: scale(1.05);
+    /* z-index: 100; */
+    background-color: rgba(0, 247, 251, 0.372);
+    box-shadow: 0px 5px 10px px rgba(32, 32, 32, 0.345);
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/*-----------------------------------OPINIONS PAGE------------------------------------- */
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+.opinionsPage-layout{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.opinionPage-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.opinions-area{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    max-width: 1000px;
+    border-radius: 20px;
+
+    padding: 20px;
+}
+
+
+
+.opinions-content{
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+
+    background-color: rgb(41, 41, 41);
+    height: auto;
+
+    padding: 25px 0;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 550px;
+}
+
+
+
+.opinions-title{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+    justify-content: flex-start;
+}
+
+
+
+
+
+
+.wordle-image{
+    width: 250px;
+    height: auto;
+    padding-bottom: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.wordle-container{
+    transition: 0.5s;
+    /* mas atributos inline */
+}
+.wordle-container:hover{
+    scale: 1.05;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/*-----------------------------------FOOTER------------------------------------- */
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+
+
+.footer--main{
+    position: absolute;
+    bottom: 0px;
+
+    width: 100%;
+    height: 90px;
+
+    background-color: #0C0C0C;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3%;
+
+    z-index: 10;
+    box-shadow: 0 0px 20px #121212, 0px 2px 30px rgb(1, 1, 1);
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@300&display=swap');
+
+.footer--main .montechLetras{
+    font-family: 'Lexend Giga', sans-serif;
+    font-size: 20px;
+}
+
+.footer--links{
+    list-style: none;
+}
+
+.footer--links li{
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+.footer--links li a{
+    transition: all 0.3 ease 0s;
+}
+
+.footer--links li a:hover{
+    color: #3f8890;
+}
+
+

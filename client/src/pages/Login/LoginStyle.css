@@ -1,0 +1,161 @@
+.registration-page{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto;
+    grid-column-gap: 100px;
+
+    height: 100vh;
+    background-color: rgb(35, 35, 35);
+
+    padding-bottom: 105px;
+    padding-top: 100px;
+
+}
+
+.registration-formContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    justify-content: center;
+
+    background-image: linear-gradient(to right bottom, #f2f2f2, #e6e6e6, #dadada, #cecece, #c2c2c2);
+
+
+    width: 400px;
+    height: 550px;
+
+
+    padding: 40px;
+    border-radius: 20px;
+
+    box-shadow: 0 0 20px #171717;
+}
+
+
+
+
+.title{
+    background-image: linear-gradient(to right bottom, #6d6d6d, #535353, #3b3b3b, #242424, #0d0d0d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    background-color: red;
+
+}
+
+.username-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.username-field{
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+    height: 40px;
+
+
+    border-bottom: 3px solid #393939;
+    transition: 0.5s;
+
+    padding-left: 10px;
+    padding-bottom: 5px;
+
+    font-size: 25px;
+    color: black;
+}
+
+
+.username-field:focus{
+    border-bottom: 4px solid #95c601;
+}
+
+
+
+
+.password-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.password-field{
+    position: relative;
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+    height: 40px;
+
+
+    border-bottom: 3px solid #393939;
+    transition: 0.5s;
+
+    padding-left: 10px;
+    padding-bottom: 5px;
+
+    font-size: 25px;
+    color: black;
+}
+
+.password-field:focus{
+    border-bottom: 4px solid #95c601;
+}
+
+.errorMsj{
+    position:absolute;
+    margin-bottom: 60px;
+
+    color: rgb(196, 0, 0);
+    font-size: 15px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Singup-button{
+    border: none;
+    outline: none;
+
+    background-image: linear-gradient(to right bottom, #6d6d6d, #535353, #3b3b3b, #242424, #0d0d0d);
+
+
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+
+    transition: 0.5s;
+}
+
+.Singup-button:hover{
+    background-image: linear-gradient(to right bottom, #2c2c2c, #242424, #1d1d1d, #161616, #0d0d0d);
+}
+
+
+.Singup-buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%
+}
+
