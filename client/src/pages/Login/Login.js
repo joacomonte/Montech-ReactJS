@@ -1,4 +1,4 @@
-import React,{useContext} from 'react';
+import React,{useContext, useLayoutEffect} from 'react';
 
 import { ErrorMessage, Form, Field, Formik } from 'formik';
 import * as Yup from 'yup';
@@ -13,6 +13,10 @@ import Footer from '../../components/Footer'
 
 
 function Login() {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     const {authState, setAuthState} = useContext(AuthContext);
 
