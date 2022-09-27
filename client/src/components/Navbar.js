@@ -34,11 +34,6 @@ export default function Navbar(){
          
 
             <div className="headerLinks-container">
-                <a href="https://wordle-montech.netlify.app">
-                    <button className="buttonStyle-white">
-                        Wordle Game
-                    </button>
-                    </a>
 
                 <Link to="/opinions-page"> 
                         <button className="buttonStyle-white">
