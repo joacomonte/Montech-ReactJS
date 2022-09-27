@@ -1,8 +1,8 @@
 const express = require('express');
 const {Users} = require('../models'); // {} is the same as models.Users
 const router = express.Router() // "router" now will be my router (by express)
-const bcrypt = require("bcrypt");
-const {sign} = require('jsonwebtoken');
+const bcrypt = require("bcryptjs");
+const { sign } = require('jsonwebtoken');
 const { validateToken } = require('../middlewares/authMiddleware');
 
 
