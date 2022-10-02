@@ -8,7 +8,7 @@ Montech is a website with no other porpuse other than apply what i have been lea
 
 The Montech web design is original, made from scratch with light influence from other sources.
 	
-## Technologies & Modules used
+## Technologies and Modules used
 Project is created with:
 * Lorem version: 12.3
 * Ipsum version: 2.33
