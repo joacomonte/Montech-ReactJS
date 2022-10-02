@@ -1,6 +1,6 @@
 ## Table of contents
 * [General info](#General-info)
-* [Technologies & Modules used](#technologies-&-Modules-used)
+* [Technologies & Modules used](#Technologies-&-Modules-used)
 * [Setup](#setup)
 
 ## General info
