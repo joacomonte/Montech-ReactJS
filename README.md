@@ -32,14 +32,14 @@ To run this project, install it locally using npm:
 
 ### on Client Side
 ```
-$ cd ../client
+$ cd client
 $ npm i
 $ npm start
 ```
 
 ### on Client Side
 ```
-$ cd ../server
+$ cd server
 $ npm i
 $ npm nodemon index.js
 ```
