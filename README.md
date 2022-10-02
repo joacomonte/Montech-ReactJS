@@ -26,6 +26,9 @@ The Montech web design is original, made from scratch with light influence from 
 - dontenv
 - jsonwebtoken
 - bscrypt
+
+### SQL Server
+i have used https://www.freesqldatabase.com to host my SQL db
 	
 ## Setup
 To run this project, install it locally using npm:
