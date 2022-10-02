@@ -5,6 +5,7 @@
 
 ## General info
 Montech is a website with no other porpuse other than apply what i have been learning about ReactJS and NodeJS. 
+
 The Montech web design is original, made from scratch with light influence from other sources.
 	
 ## Technologies & Modules used
