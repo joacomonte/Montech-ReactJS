@@ -2,6 +2,7 @@
 * [General info](#general-info)
 * [Technologies and Modules used](#technologies-and-modules-used)
 * [Setup](#setup)
+* [Visualize the web](#visualize-the-web)
 
 ## General info
 Montech is a website with no other porpuse other than apply what i have been learning about ReactJS and NodeJS. 
@@ -29,6 +30,10 @@ The Montech web design is original, made from scratch with light influence from 
 
 ### SQL Server
 i have used https://www.freesqldatabase.com to host my SQL db
+	
+## Visualize the Web
+Montech Server side is hosted on Heroku and the Front side is on Netlify
+Here is the link: https://montech.netlify.app
 	
 ## Setup
 To run this project, install it locally using npm:
