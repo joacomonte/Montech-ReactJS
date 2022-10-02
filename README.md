@@ -10,7 +10,7 @@ Montech is a website with no other porpuse other than apply what i have been lea
 The Montech web design is original, made from scratch with light influence from other sources.
 	
 ## Technologies and Modules used
-### Clien tSide
+### Client Side
 - useLayoutEffect
 - AuthContext
 - useNavigate
