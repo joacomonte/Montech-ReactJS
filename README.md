@@ -21,6 +21,8 @@ The Montech web design is original, made from scratch with light influence from 
 - yup (for validation schema)
 - react-router-dom (Links, Routes...)
 - AsyncPaginate
+- Modals & Portals (for product preview img)
+
 
 ### Server Side
 - express
