@@ -19,7 +19,7 @@ The Montech web design is original, made from scratch with light influence from 
 - formik (for forms)
 - yup (for validation schema)
 - react-router-dom (Links, Routes...)
-- AsynctPaginate
+- AsyncPaginate
 
 ### Server Side
 - express
