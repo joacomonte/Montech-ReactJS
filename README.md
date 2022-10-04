@@ -1,8 +1,9 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies and Modules used](#technologies-and-modules-used)
-* [Setup](#setup)
 * [Visualize the web](#visualize-the-web)
+* [Setup](#setup)
+
 
 ## General info
 Montech is a website with no other porpuse other than apply what i have been learning about ReactJS and NodeJS. 
